@@ -1,0 +1,300 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A Propos De Nous{% endblock %}
+
+{% block body %}
+    <!-- Breadcrumb Area -->
+    <section class="breadcrumb-area text-center" style="background-image: url({{ asset('images/gallery/gallery-full-5.jpg') | imagine_filter
+        ('about_us_banner') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>A Propos de Nous</h2>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="{{ path('app_home') }}">Accueil</a></li>
+                        <li class="list-inline-item"><i class="fa fa-long-arrow-right"></i>a Propos De Nous</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumb Area -->
+
+    <!-- Welcome Area -->
+    <section class="welcome-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="welcome-box">
+                        <h4 class="text-pink2">HELP AFTER STROKE</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p>
+                            <span class="text-pink2">Help After Stroke</span> est une association à but non lucratif Camerounaise qui met à disposition des
+                            familles et du grand public, des
+                            formations pratiques et précises d’auxiliaire de vie sociale. Nous offrons des formations courtes et gratuites à tous ceux et celles
+                            qui aimeraient convenablement prendre soin des personnes ou des proches qui, ayant été victimes d’AVC présentent des séquelles post
+                            traumatiques divers.
+                        </p>
+                        <p>
+                            Nous sommes une association apolitique, sans distinction quelconque qui voit le jour après un constat sociétal alarmant au seins des
+                            familles Africaines sinistrées par les dégâts de tout ordre qui peuvent causer un accident vasculaire cérébrale (AVC).
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="{{ asset('images/donation/donation-1.webp') | imagine_filter('about_us_image') }}" alt="A propos de Help After Stroke"
+                             class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Welcome Area -->
+
+    <!-- Home About Area -->
+    <section class="h-about" style="background-image: url({{ asset('images/blog/blog-thumbnail-2.webp') | imagine_filter('context_banner') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="about-box">
+                        <h4>Le Contexte social </h4>
+                        <img src="{{ asset('images/heartbeat2.png') }}" alt="">
+                        <p>
+                            L’accident vasculaire cérébral (AVC) est la première cause de handicap acquis de l’adulte. Si les conséquences d’un AVC sont
+                            généralement bien visibles (hémiplégie, aphasie perte d’équilibre...) Il est aussi possible de développer certaines difficultés
+                            comme de grandes fatigues, des troubles psychiques, des difficultés d’orientation spatio-temporelle, des troubles de l'attention, de
+                            la mémoire ou bien même la perte de la faculté d'initiation des actions.
+                        </p>
+                        <p>
+                            Malheureusement, le contexte social Africain ou Camerounais semble peu préparé à cet effet pourtant, les prévisions très alarmistes
+                            indiquent qu'en Afrique, les maladies vasculaires notamment cérébrales vont augmenter.
+                        </p>
+                        <p>
+                            Une fois sortis des hôpitaux, des milliers de familles Africaines sont brutalement confrontés à ce genre de situation au sein de
+                            leurs domiciles et doivent y faire face tous les jours.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shedule-box">
+                        <div class="open-hr">
+                        </div>
+                        <div class="help-box">
+                            <h6><i class="fa fa-pencil-square-o"></i>Faites vous former</h6>
+                            <p>Une formation courte, précise, pratique et gratuite</p>
+                            <a href="#">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home About Area -->
+
+    <!-- Service Area -->
+    <section class="about-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-top text-center mb-5">
+                        <h4>Nos Objectifs</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p>Dans l'optique d'améliorer le contexte de vie des personnes victimes d'un AVC, nous nous engageons en ceci:</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-1.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Formations</h6>
+                            <p>
+                                Des formations courtes, pratiques, précises, gratuites, d’un accompagnement psychologique et de tout autre ordre aux familles
+                                principalement et à toute personne désireuse d’aider ou d’intervenir en tant qu’auxiliaire de vie sociale;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-2.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Sensibilisations</h6>
+                            <p>
+                                Sensibiliser les familles à la survenue d’un AVC à travers des conseils et astuces pratiques
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-3.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Ressources Exploitables</h6>
+                            <p>
+                                De créer une base de données des personnes formées afin de les rendre disponible sur nos différentes plateformes de
+                                communication et ailleurs pour quiconque aurait besoin de tels services
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-4.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Bonnes Pratiques</h6>
+                            <p>
+                                Des rappels quotidiens des règles de bonnes conduites aux auxiliaires de
+                                vie sociale formés par Help After Stroke.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-5.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Suivi Régulier</h6>
+                            <p>
+                                Un suivi régulier via un système de notation sur la qualité du service rendu par nos auxiliaires de vie sociale au sein d’une
+                                famille.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box d-flex">
+                        <div class="box-icon">
+                            <span><img src="{{ asset('images/service-6.png') }}" alt=""></span>
+                        </div>
+                        <div class="box-content">
+                            <h6>Ateliers & Activités</h6>
+                            <p>
+                                Organiser des ateliers de recyclage des auxiliaires de vie sociale, organiser des activités de détentes et de relaxation avec les
+                                familles concernées.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Area -->
+
+    <!-- Counter Area -->
+    <section class="counter-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="{{ asset('images/counter-1.png') }}" alt="" class="img-fluid">
+                        <p class="counter">114</p>
+                        <h6>Familles</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="{{ asset('images/counter-2.png') }}" alt="" class="img-fluid">
+                        <p class="counter">321</p>
+                        <h6>Auxiliaires</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="{{ asset('images/counter-3.png') }}" alt="" class="img-fluid">
+                        <p class="counter">420</p>
+                        <h6>Certifications</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="{{ asset('images/counter-4.png') }}" alt="" class="img-fluid">
+                        <p class="counter">337</p>
+                        <h6>Formations</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Counter Area -->
+
+    <!-- Specialist Area -->
+    <section class="specialist about-specialist">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="specialist-top text-center">
+                        <h4>Notre équipe</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p>
+                            <span class="text-pink1">Help After Stroke</span> une association organisée comportant un bureau constitutif et une équipe pluridisciplinaire.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-doctor owl-carousel">
+                        <div class="carousel-content">
+                            <img src="{{ asset('images/doc-1.png') }}" alt="" class="img-fluid">
+                            <div class="doc-content text-center">
+                                <h5>Dr. Alex Jones</h5>
+                                <p>Cardiologist</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-content">
+                            <img src="{{ asset('images/doc-2.png') }}" alt="" class="img-fluid">
+                            <div class="doc-content text-center">
+                                <h5>Dr. Maria Perry</h5>
+                                <p>Surgeon</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-content">
+                            <img src="{{ asset('images/doc-3.png') }}" alt="" class="img-fluid">
+                            <div class="doc-content text-center">
+                                <h5>Dr. David Jones</h5>
+                                <p>Dentist</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-content">
+                            <img src="{{ asset('images/doc-4.png') }}" alt="" class="img-fluid">
+                            <div class="doc-content text-center">
+                                <h5>Dr. Alisha Perry</h5>
+                                <p>Urologist</p>
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Specialist Area -->
+{% endblock %}

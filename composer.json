@@ -10,6 +10,9 @@
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.16",
+        "easycorp/easyadmin-bundle": "^4.9",
+        "liip/imagine-bundle": "^2.12",
+        "maviance/smobilpay-php": "^2.2",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.24",
         "symfony/asset": "6.3.*",
@@ -39,7 +42,10 @@
         "symfony/web-link": "6.3.*",
         "symfony/yaml": "6.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/intl-extra": "^3.8",
+        "twig/string-extra": "^3.8",
+        "twig/twig": "^2.12|^3.0",
+        "vich/uploader-bundle": "^2.2"
     },
     "config": {
         "allow-plugins": {
@@ -90,6 +96,7 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.5",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "6.3.*",
         "symfony/css-selector": "6.3.*",

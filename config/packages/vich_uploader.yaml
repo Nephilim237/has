@@ -1,0 +1,19 @@
+vich_uploader:
+    db_driver: orm
+
+    metadata:
+        type: attribute
+
+    mappings:
+        posts:
+            uri_prefix: '%path.post_images%'
+            upload_destination: '%kernel.project_dir%/public/%path.post_images%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: false
+            delete_on_remove: false
+        users:
+            uri_prefix: '%path.member_images%'
+            upload_destination: '%kernel.project_dir%/public/%path.member_images%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: false
+            delete_on_remove: false

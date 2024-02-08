@@ -1,0 +1,88 @@
+
+@import "placeholders";
+
+/* ====================
+##. News & Events
+==================== */
+.news {
+  padding: 80px 0 90px;
+  .news-top {
+    @extend %service-top-news-top;
+  }
+  .news-box {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    @include transition(0.2s ease);
+    .news-image {
+      a {
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .news-heading {
+      margin-bottom: 12px;
+      padding: 0 20px;
+      .news-date {
+        p {
+          font-size: 20px;
+          background: $pink1;
+          color: #fff;
+          width: 58px;
+          height: 58px;
+          font-weight: 600;
+          line-height: 20px;
+          @include border-radius(50%);
+          padding-top: 8px;
+          margin-right: 12px;
+        }
+      }
+      .heading-box {
+        padding-top: 5px;
+        h6 {
+          a {
+            font-size: 18px;
+            color: $black1;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: inline-block;
+
+            &:hover {
+              color: $pink1;
+            }
+          }
+        }
+        ul {
+          li {
+            i {
+              font-size: 14px;
+              color: $text3;
+              margin-right: 5px;
+            }
+            a {
+              color: $text1;
+              &:hover {
+                color: $pink1;
+              }
+            }
+            &:nth-child(1) {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .news-content {
+      padding: 0 20px;
+      p {
+        font-size: 16px;
+        color: $text3;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding-bottom: 20px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

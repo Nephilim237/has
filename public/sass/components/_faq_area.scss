@@ -1,0 +1,302 @@
+/* ====================
+##. Faq Area
+==================== */
+.faq {
+  padding: 90px 0;
+  .faq-box {
+    .card {
+      border: none;
+      @include border-radius(0);
+      margin-bottom: 20px;
+      .card-header {
+        padding: 0;
+        border: none;
+        @include border-radius(0);
+        a {
+          display: block;
+          height: 55px;
+          background: $border1;
+          position: relative;
+          i {
+            background: $pink1;
+            font-size: 24px;
+            color: #fff;
+            position: absolute;
+            width: 55px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding-top: 15px;
+          }
+          span {
+            position: absolute;
+            top: 13px;
+            left: 10%;
+            font-size: 18px;
+            color: $black1;
+            font-weight: 600;
+          }
+        }
+        a.hvr-effect.collapsed {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .card-body {
+        border: 1px solid $border1;
+        border-top: none;
+        p {
+          font-size: 15px;
+          color: $text3;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .faq-widgets {
+    .faq-widget {
+      border: 1px solid $border1;
+      padding: 20px 25px;
+      margin-bottom: 35px;
+      h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          background: $pink1;
+          width: 50px;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      ul {
+        li {
+          a {
+            display: block;
+            font-size: 15px;
+            color: $text1;
+            border-bottom: 1px dashed $border2;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            &:hover {
+              color: $pink1;
+            }
+          }
+          &:last-child {
+            a {
+              border-bottom: none;
+              padding-bottom: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .shedule-box {
+      border: 1px solid $border1;
+      padding: 20px 25px 25px;
+      .open-hr {
+        margin-bottom: 28px;
+        h6 {
+          font-size: 17px;
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 18px;
+          i {
+            color: $pink1;
+            margin-right: 8px;
+          }
+        }
+        ul {
+          li {
+            font-size: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed $border2;
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+      .help-box {
+        h6 {
+          font-size: 17px;
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 13px;
+          i {
+            color: $pink1;
+            margin-right: 8px;
+          }
+        }
+        p {
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
+        a {
+          font-size: 15px;
+          color: #fff;
+          background: $pink1;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          padding: 8px;
+          @include border-radius(25px);
+          &:hover {
+            background: $pink2;
+          }
+        }
+      }
+    }
+  }
+}
+.faq-two {
+  padding: 90px 0 55px;
+  .faq-qes {
+    margin-bottom: 30px;
+    ul {
+      li {
+        a {
+          font-size: 17px;
+          color: $black1;
+          display: inline-block;
+          font-weight: 600;
+          margin-bottom: 15px;
+          &:hover {
+            color: $pink1;
+          }
+        }
+      }
+    }
+  }
+  .faq-ans {
+    margin-bottom: 28px;
+    .fa-ttl {
+      p {
+        font-size: 17px;
+        color: $black1;
+        margin-bottom: 15px;
+      }
+    }
+    .fa-par {
+      p {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+  .faq-widgets {
+    .faq-widget {
+      border: 1px solid $border1;
+      padding: 20px 25px;
+      margin-bottom: 35px;
+      h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          background: $pink1;
+          width: 50px;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      ul {
+        li {
+          a {
+            display: block;
+            font-size: 15px;
+            color: $text1;
+            border-bottom: 1px dashed $border2;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            &:hover {
+              color: $pink1;
+            }
+          }
+          &:last-child {
+            a {
+              border-bottom: none;
+              padding-bottom: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .shedule-box {
+      border: 1px solid $border1;
+      padding: 20px 25px 25px;
+      .open-hr {
+        margin-bottom: 28px;
+        h6 {
+          font-size: 17px;
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 18px;
+          i {
+            color: $pink1;
+            margin-right: 8px;
+          }
+        }
+        ul {
+          li {
+            font-size: 15px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed $border2;
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+      .help-box {
+        h6 {
+          font-size: 17px;
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 13px;
+          i {
+            color: $pink1;
+            margin-right: 8px;
+          }
+        }
+        p {
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
+        a {
+          font-size: 15px;
+          color: #fff;
+          background: $pink1;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          padding: 8px;
+          @include border-radius(25px);
+          &:hover {
+            background: $pink2;
+          }
+        }
+      }
+    }
+  }
+}

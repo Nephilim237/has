@@ -1,0 +1,457 @@
+/* ====================
+##. Department Area
+==================== */
+.department {
+  padding: 80px 0 65px;
+  .department-top {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -35px;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        right: 50%;
+        margin-right: -33px;
+        margin-bottom: -23px;
+      }
+    }
+    img {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      max-width: 550px;
+      margin: auto;
+      line-height: 28px;
+      margin-bottom: 75px;
+    }
+  }
+  .nav {
+    padding-left: 15px;
+    a.nav-link {
+      width: 47%;
+      height: 110px;
+      text-align: center;
+      @include border-radius(2px);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      padding-top: 18px;
+      img {
+        max-width: 42px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        color: $black1;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    a.active {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      p {
+        color: $pink1;
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      padding: 18px 25px 22px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      .box-heading {
+        h4 {
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+      }
+      .content-box {
+        p {
+          font-size: 16px;
+          line-height: 32px;
+          margin-bottom: 20px;
+          span {
+            display: block;
+            font-size: 15px;
+            color: $text3;
+            margin-top: 10px;
+          }
+        }
+        ul {
+          li {
+            font-size: 15px;
+            color: $text3;
+            margin-bottom: 12px;
+            i {
+              color: $pink1;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+      .image-box {
+        img {
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 16px;
+          color: $pink1;
+          font-weight: 600;
+          padding: 8px 30px;
+          border: 1px solid $pink1;
+          @include border-radius(25px);
+          float: right;
+          &:hover {
+            background: $pink1;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ====================
+##. Department Area 2
+==================== */
+.department-area2 {
+  padding: 80px 0 0;
+  .department2-top {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -35px;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        right: 50%;
+        margin-right: -33px;
+        margin-bottom: -23px;
+      }
+    }
+    img {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      max-width: 550px;
+      margin: auto;
+      line-height: 28px;
+      margin-bottom: 75px;
+    }
+  }
+  .nav {
+    padding-left: 15px;
+    margin-bottom: 30px;
+    a.nav-link {
+      width: 18%;
+      height: 125px;
+      text-align: center;
+      @include border-radius(2px);
+      border: 1px solid $border1;
+      padding-top: 26px;
+      img {
+        max-width: 42px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        color: $black1;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    a.active {
+      border-color: $border2;
+      p {
+        color: $pink1;
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      padding: 18px;
+      border: 1px solid $border1;
+      .image-box {
+        a {
+          font-size: 16px;
+          color: $pink1;
+          font-weight: 600;
+          padding: 8px 30px;
+          border: 1px solid $pink1;
+          @include border-radius(25px);
+          float: right;
+          &:hover {
+            background: $pink1;
+            color: #fff;
+          }
+        }
+      }
+      .content-box {
+        h4 {
+          color: $black1;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 32px;
+          margin-bottom: 20px;
+          span {
+            display: block;
+            color: $text3;
+            margin-top: 10px;
+          }
+        }
+        ul {
+          margin-bottom: 35px;
+          li {
+            font-size: 15px;
+            color: $text3;
+            margin-bottom: 12px;
+            i {
+              color: $pink1;
+              margin-right: 8px;
+            }
+          }
+        }
+        a {
+          font-size: 16px;
+          color: $pink1;
+          font-weight: 600;
+          padding: 8px 30px;
+          border: 1px solid $pink1;
+          @include border-radius(25px);
+          &:hover {
+            background: $pink1;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.department-padding {
+  padding-bottom: 88px;
+}
+
+/* ====================
+##. Department Area 3
+==================== */
+.department-area3 {
+  padding: 80px 0 52px;
+  .department3-top {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -35px;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        right: 50%;
+        margin-right: -33px;
+        margin-bottom: -23px;
+      }
+    }
+    img {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      max-width: 550px;
+      margin: auto;
+      line-height: 28px;
+      margin-bottom: 75px;
+    }
+  }
+  .department-box {
+    padding: 22px 25px;
+    @include border-radius(3px);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    @include transition(0.2s ease);
+    margin-bottom: 30px;
+    .box-icon {
+      img {
+        max-width: 50px;
+        margin-right: 30px;
+        margin-top: 5px;
+      }
+    }
+    .box-content {
+      h5 {
+        color: $black1;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+      p {
+        font-size: 15px;
+        color: $text2;
+        line-height: 25px;
+        margin-bottom: 7px;
+      }
+      a {
+        color: $pink1;
+        font-weight: 600;
+        &:hover {
+          color: $pink2;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    }
+  }
+}
+
+/* ====================
+##. Department Area 4
+==================== */
+.department-area4 {
+  padding: 80px 0 52px;
+  .department4-top {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -35px;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        right: 50%;
+        margin-right: -33px;
+        margin-bottom: -23px;
+      }
+    }
+    img {
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      max-width: 550px;
+      margin: auto;
+      line-height: 28px;
+      margin-bottom: 75px;
+    }
+  }
+  .department-box {
+    border: 1px solid $border1;
+    padding: 30px 25px 40px;
+    @include border-radius(3px);
+    @include transition(0.2s ease);
+    margin-bottom: 35px;
+    .box-icon {
+      background: $border1;
+      width: 90px;
+      height: 90px;
+      @include border-radius(50%);
+      margin: auto;
+      margin-bottom: 25px;
+      img {
+        max-width: 45px;
+        margin-top: 22px;
+      }
+    }
+    .box-content {
+      h5 {
+        color: $black1;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 15px;
+        color: $text3;
+        line-height: 25px;
+        margin-bottom: 25px;
+      }
+      a {
+        color: $pink1;
+        border: 1px solid $border1;
+        padding: 8px 20px;
+        @include border-radius(30px);
+        &:hover {
+          background: $pink1;
+          color: #fff;
+          border-color: $pink1;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
+    }
+  }
+}

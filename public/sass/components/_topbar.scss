@@ -1,0 +1,258 @@
+/* ====================
+##. Top Bar
+==================== */
+.top-bar {
+  height: 45px;
+  border-bottom: 1px solid $border1;
+  .bar-content {
+    margin-top: 12px;
+    ul {
+      li {
+        color: $text2;
+        margin-right: 30px;
+        img {
+          margin-right: 8px;
+          vertical-align: sub;
+        }
+      }
+    }
+  }
+  .top-social {
+    margin-top: 5px;
+    ul {
+      li {
+        a {
+          i {
+            font-size: 13px;
+            color: $text3;
+            padding-left: 5px;
+            &:hover {
+              color: $pink1;
+            }
+          }
+        }
+        &:last-child {
+          margin-left: 20px;
+          span {
+            button {
+              color: #fff;
+              background: $pink1;
+              padding: 7px 20px;
+              border: none;
+              @include border-radius(25px);
+              &:hover {
+                background: $pink2;
+              }
+            }
+          }
+          .modal {
+            .modal-dialog {
+              .modal-content {
+                padding: 40px 45px 50px;
+                .medel-box-top {
+                  position: relative;
+                  h4 {
+                    color: $black1;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    position: relative;
+                    &:before {
+                      position: absolute;
+                      content: '';
+                      background: $pink1;
+                      width: 30px;
+                      height: 3px;
+                      bottom: 0;
+                      left: 50%;
+                      margin-left: -35px;
+                      margin-bottom: -23px;
+                    }
+                    &:after {
+                      position: absolute;
+                      content: '';
+                      background: $pink1;
+                      width: 30px;
+                      height: 3px;
+                      bottom: 0;
+                      right: 50%;
+                      margin-right: -33px;
+                      margin-bottom: -23px;
+                    }
+                  }
+                  img {
+                    margin-bottom: 15px;
+                  }
+                  button {
+                    position: absolute;
+                    top: -25px;
+                    right: -28px;
+                    font-size: 18px;
+                    color: $text3;
+                    opacity: 1;
+                    &:hover {
+                      color: $black1;
+                    }
+                  }
+                }
+                form {
+                  input {
+                    display: block;
+                    width: 100%;
+                    margin: auto;
+                    border: none;
+                    border-bottom: 2px solid $border2;
+                    margin-bottom: 25px;
+                    padding: 10px 0;
+                    font-size: 15px;
+                    color: $black1;
+                    &:focus {
+                      border-color: $pink1;
+                    }
+                  }
+                  .bootstrap-datetimepicker-widget.dropdown-menu {
+                    width: 240px;
+                  }
+                  textarea {
+                    display: block;
+                    width: 100%;
+                    height: 100px;
+                    margin: auto;
+                    border: none;
+                    border-bottom: 2px solid $border2;
+                    margin-bottom: 25px;
+                    padding: 10px 0;
+                    font-size: 15px;
+                    color: $black1;
+                    &:focus {
+                      border-color: $pink1;
+                    }
+                  }
+                  button {
+                    font-size: 16px;
+                    color: #fff;
+                    background: $pink1;
+                    border: none;
+                    padding: 10px 40px;
+                    font-weight: 600;
+                    @include border-radius(25px);
+                    &:hover {
+                      background: $pink2;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ====================
+##. Top Bar 2
+==================== */
+.top-bar2 {
+  height: 45px;
+  border-bottom: 1px solid $border1;
+  .topbar-slider {
+    margin-top: 12px;
+    .slider-item {
+      p {
+        color: $pink1;
+      }
+    }
+  }
+  .top-social-lang {
+    margin-top: 12px;
+    ul {
+      li.location {
+        color: $text2;
+        margin-right: 40px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 16px;
+          background: $border2;
+          top: 3px;
+          right: -25px;
+        }
+        img{
+          margin-right: 8px;
+          vertical-align: sub;
+        }
+      }
+      li {
+        a.social {
+          i {
+            font-size: 13px;
+            color: $text3;
+            padding-left: 5px;
+            &:hover {
+              color: $pink1;
+            }
+          }
+        }
+      }
+      li.language {
+        margin-left: 40px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 16px;
+          background: $border2;
+          top: 3px;
+          left: -25px;
+        }
+        .dropdown {
+          a.dropdown-toggle {
+            color: $text2;
+            img {
+              max-width: 21px;
+              margin-right: 8px;
+              vertical-align: bottom;
+            }
+            i {
+              margin-left: 3px
+            }
+            &:after {
+              display: none;
+            }
+          }
+          ul.dropdown-menu {
+            top: 11px !important;
+            left: inherit !important;
+            right: -6px;
+            padding: 0;
+            border: 1px solid $border1;
+            @include border-radius(0);
+            li {
+              margin-right: 0;
+              a {
+                display: block;
+                color: $text3;
+                padding: 6px 22px;
+                img {
+                  max-width: 20px;
+                  margin-right: 8px;
+                }
+                &:hover {
+                  background: $pink1;
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

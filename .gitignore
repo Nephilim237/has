@@ -7,6 +7,9 @@
 /public/bundles/
 /var/
 /vendor/
+/pages/
+/public/sass/
+/node_modules/
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
@@ -14,7 +17,6 @@
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+###> liip/imagine-bundle ###
+/public/media/
+###< liip/imagine-bundle ###

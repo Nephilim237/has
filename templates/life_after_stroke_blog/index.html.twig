@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vivre Après un AVC{% endblock %}
+
+{% block body %}
+    <!-- Breadcrumb Area -->
+    <section class="breadcrumb-area main-blog text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Blog</h2>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="{{ path('app_home') }}">Accueil</a></li>
+                        <li class="list-inline-item"><i class="fa fa-long-arrow-right"></i>Blog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumb Area -->
+
+    <!-- Blog Area -->
+    <section class="blog-four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-7">
+                    <div class="row">
+                        {% for post in posts %}
+                            <div class="col-lg-6 col-md-12">
+                                <div class="blog-box">
+                                    <div class="blog-image">
+                                        <a href="{{ path('single_post', {'slug' : post.slug}) }}"><img src="{{ vich_uploader_asset(post, 'imageFile') |
+                                            imagine_filter('post_image') }}" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="blog-heading d-flex">
+                                        <div class="blog-date text-center">
+                                            <p></p>
+                                        </div>
+                                        <div class="heading-box">
+                                            <h6><a href="{{ path('single_post', {'slug' : post.slug}) }}">{{ post.title }}</a></h6>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-user-o"></i><a href="#">Dr. IHIOF</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        {{ post.content | striptags | u.truncate(200, '...', false) | raw }}
+                                        <p class="d-flex justify-content-between pt-3">
+                                            <a href="{{ path('single_post', {'slug' : post.slug}) }}" class="btn-link text-pink1">
+                                                Lire l'article <i class="fa fa-angle-double-right"></i>
+                                            </a>
+                                            {{ post.createdAt | format_datetime('short', 'short', locale='fr', timezone='Africa/Douala') }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+{#                        <div class="col-md-12">#}
+{#                            <div class="pagination-box text-center">#}
+{#                                <ul class="list-unstyled list-inline">#}
+{#                                    <li class="list-inline-item"><a href="">1</a></li>#}
+{#                                    <li class="list-inline-item"><a href="">2</a></li>#}
+{#                                    <li class="active list-inline-item"><a href="">3</a></li>#}
+{#                                    <li class="list-inline-item"><a href="">4</a></li>#}
+{#                                    <li class="list-inline-item"><a href="">...</a></li>#}
+{#                                    <li class="list-inline-item"><a href=""><i class="fa fa-angle-right"></i></a></li>#}
+{#                                    <li class="list-inline-item"><a href=""><i class="fa fa-angle-double-right"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+                    </div>
+                </div>
+{#                <div class="col-lg-3 col-md-5">#}
+{#                    <div class="row">#}
+{#                        <div class="col-md-12">#}
+{#                            <div class="widget-search">#}
+{#                                <h5>SEARCH BLOG</h5>#}
+{#                                <form action="#">#}
+{#                                    <input type="text" name="search" placeholder="Search Here" required="">#}
+{#                                    <button type="submit"><i class="fa fa-search"></i></button>#}
+{#                                </form>#}
+{#                            </div>#}
+{#                            <div class="widget-post">#}
+{#                                <h5>RECENT POST</h5>#}
+{#                                <ul class="list-unstyled">#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">Development in easy Way to start your career.</a></li>#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">How to start web design for easyest way.</a></li>#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">Start your career in web design in easy way.</a></li>#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">What worlds top developer sayed about there career.</a>#}
+{#                                    </li>#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">Consectetur adipisicing elit.</a></li>#}
+{#                                    <li><i class="fa fa-angle-right"></i><a href="">Duis aute irure dolor in reprehen.</a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="widget-cat">#}
+{#                                <h5>CATEGORIES</h5>#}
+{#                                <ul class="list-unstyled">#}
+{#                                    <li><a href="">Design <span>36</span></a></li>#}
+{#                                    <li><a href="">Photography <span>43</span></a></li>#}
+{#                                    <li><a href="">Branding <span>23</span></a></li>#}
+{#                                    <li><a href="">Corporate <span>34</span></a></li>#}
+{#                                    <li><a href="">Graphic <span>27</span></a></li>#}
+{#                                    <li><a href="">Journal <span>19</span></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="widget-tag">#}
+{#                                <h5>POPULAR TAG</h5>#}
+{#                                <div class="tag-box">#}
+{#                                    <a href="">HTML</a>#}
+{#                                    <a href="">CSS</a>#}
+{#                                    <a href="">Photoshop</a>#}
+{#                                    <a href="">Jquery</a>#}
+{#                                    <a href="">PHP</a>#}
+{#                                    <a href="">Wordpress</a>#}
+{#                                    <a href="">Bootstrap</a>#}
+{#                                    <a href="">Javascript</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Area -->
+{% endblock %}

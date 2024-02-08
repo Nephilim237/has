@@ -1,0 +1,47 @@
+/* ====================
+##. Banner Area
+==================== */
+.banner-area {
+  background-image: url(../images/banner/banner-area-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 85px 0;
+  &:before {
+    position: absolute;
+    content: '';
+    background: transparentize($black, .55);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .banner-box {
+    h3 {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      color: $border1;
+    }
+    a {
+      font-size: 15px;
+      color: $border1;
+      background: $black1;
+      display: inline-block;
+      width: 200px;
+      height: 45px;
+      text-align: center;
+      padding-top: 12px;
+      font-weight: 600;
+      @include border-radius(30px);
+      margin-top: 10px;
+      &:hover {
+        background: $pink2;
+      }
+    }
+  }
+}

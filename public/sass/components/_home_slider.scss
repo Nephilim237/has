@@ -1,0 +1,102 @@
+/* ====================
+##. Home Slider
+==================== */
+.home-slider {
+  .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    .slider-item {
+      width: 100%;
+      height: 700px;
+      .slider-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+        .slider-tablecell {
+          display: table-cell;
+          vertical-align: middle;
+          h1 {
+            color: $black1;
+            margin-bottom: 20px;
+            font-weight: 600;
+            span {
+              color: $pink1;
+            }
+          }
+          p {
+            font-size: 18px;
+            color: $black2;
+            margin-bottom: 40px;
+          }
+          a {
+            font-size: 15px;
+            color: #fff;
+            background: $pink1;
+            padding: 12px 30px;
+            @include border-radius(25px);
+            font-weight: 600;
+            &:hover {
+              background: $pink2;
+            }
+          }
+        }
+      }
+    }
+    .slider1 {
+      background-image: url("../images/slider-1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .slider2 {
+      background-image: url("../images/slider-2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .owl-nav {
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: rgba(0, 163, 200, 0.5);
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin-left: -32px;
+        margin-top: -38px;
+        @include border-radius(50%);
+        padding-top: 22px;
+        padding-left: 20px;
+        &:hover {
+          background: $pink1;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: rgba(0, 163, 200, 0.5);
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin-right: -32px;
+        margin-top: -38px;
+        @include border-radius(50%);
+        padding-top: 22px;
+        padding-right: 20px;
+        &:hover {
+          background: $pink1;
+        }
+      }
+    }
+  }
+}
+.owl-carousel {
+  .owl-item {
+    transform: translateZ(0);
+    img {
+      transform-style: unset;
+    }
+  }
+}

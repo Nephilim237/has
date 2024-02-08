@@ -1,0 +1,36 @@
+/* ====================
+##. Service Banner
+==================== */
+.service-banner {
+  .banner-boxes {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 55px;
+    @include border-radius(80px);
+    position: absolute;
+    top: -68px;
+    background: #fff;
+    z-index: 111;
+    width: 97.4%;
+    .banner-box {
+      .box-icon {
+        img {
+          padding-top: 10px;
+          margin-right: 20px;
+        }
+      }
+      .box-content {
+        h6 {
+          color: $black1;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 15px;
+          color: $text2;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}

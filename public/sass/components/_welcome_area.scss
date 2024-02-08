@@ -1,0 +1,237 @@
+/* ====================
+##. Welcome Area
+==================== */
+.welcome-area {
+  padding: 90px 0;
+  .welcome-box {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+        margin-left: 38px;
+      }
+    }
+    img {
+      margin-left: 19px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    a {
+      font-size: 15px;
+      color: $pink1;
+      border: 1px solid $pink1;
+      padding: 8px 20px;
+      @include border-radius(25px);
+      font-weight: 600;
+      &:hover {
+        background: $pink1;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ====================
+##. Welcome Area 2
+==================== */
+.welcome-area2 {
+  padding-top: 40px;
+  .welcome-img {
+    img {
+      max-width: 310px;
+    }
+  }
+  .welcome-box {
+    margin-top: 45px;
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+        margin-left: 38px;
+      }
+    }
+    img {
+      margin-left: 19px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
+  }
+  .ser-box {
+    margin-bottom: 40px;
+    @import "placeholders";
+    @extend %box-icon-box-content;
+  }
+}
+
+/* ====================
+##. Welcome Area 3
+==================== */
+.welcome-area3 {
+  padding: 148px 0 47px;
+  .welcome-box {
+    h4 {
+      &:before {
+        left: initial !important;
+        margin-left: initial !important;
+      }
+      &:after {
+        left: 0;
+        right: initial !important;
+        margin-right: initial !important;
+        margin-left: 38px;
+      }
+    }
+    img {
+      margin-left: 19px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: $text3;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
+  }
+  .ser-box {
+    margin-bottom: 40px;
+    .box-icon {
+      span {
+        display: block;
+        width: 72px;
+        height: 72px;
+        text-align: center;
+        @include border-radius(50%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+        margin-right: 20px;
+        img {
+          padding-top: 19px;
+        }
+      }
+    }
+    .box-content {
+      h6 {
+        color: $black1;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        color: $text2;
+        letter-spacing: 0;
+      }
+    }
+  }
+  .shedule-box {
+    border: 1px solid $border1;
+    padding: 33px 35px 37px;
+    margin-top: 5px;
+    @include border-radius(3px);
+    .open-hr {
+      margin-bottom: 28px;
+      h6 {
+        font-size: 17px;
+        color: $black1;
+        font-weight: 600;
+        margin-bottom: 18px;
+        i {
+          color: $pink1;
+          margin-right: 8px;
+        }
+      }
+      ul {
+        li {
+          font-size: 15px;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          border-bottom: 1px dashed $border2;
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+    .help-box {
+      h6 {
+        font-size: 17px;
+        color: $black1;
+        font-weight: 600;
+        margin-bottom: 13px;
+        i {
+          color: $pink1;
+          margin-right: 8px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+      }
+      a {
+        font-size: 15px;
+        color: #fff;
+        background: $pink1;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        @include border-radius(25px);
+        &:hover {
+          background: $pink2;
+        }
+      }
+    }
+  }
+}

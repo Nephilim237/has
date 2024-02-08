@@ -1,0 +1,379 @@
+/* ====================
+##. Base style
+==================== */
+html {
+  color: $black1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $border2;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font-size: 14px;
+  color: $text1;
+  letter-spacing: 0.3px;
+  font-family: $source;
+}
+
+h1,
+h1 a {
+  font-size: 40px;
+}
+
+h2,
+h2 a {
+  font-size: 32px;
+}
+
+h3,
+h3 a {
+  font-size: 28px;
+}
+
+h4,
+h4 a {
+  font-size: 24px;
+}
+
+h5,
+h5 a {
+  font-size: 20px;
+}
+
+h6,
+h6 a {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+  font-family: $dosis;
+  margin: 0;
+}
+
+a,
+button,
+li,
+p {
+  font-size: 14px;
+  font-family: $source;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a:active,
+a:focus,
+a:hover,
+button:focus,
+button:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+button {
+  @include transition(0.3s ease-in-out);
+}
+
+a {
+  color: $pink1;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.lh-sm {
+  line-height: 1.25 !important
+}
+
+.lh-base {
+  line-height: 1.5 !important
+}
+
+.lh-lg {
+  line-height: 2 !important
+}
+
+.padding-fix {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding-fix-r {
+  padding-right: 0;
+}
+
+.padding-fix-l {
+  padding-left: 0;
+}
+
+.margin-fix {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-title {
+  color: $black1;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: $pink1;
+    width: 30px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    margin-bottom: -23px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: $pink1;
+    width: 30px;
+    height: 3px;
+    bottom: 0;
+    right: 50%;
+    margin-right: -33px;
+    margin-bottom: -23px;
+  }
+}
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+@media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 2.1875rem !important
+  }
+  .fs-2 {
+    font-size: 1.75rem !important
+  }
+  .fs-3 {
+    font-size: 1.53125rem !important
+  }
+  .fs-4 {
+    font-size: 1.3125rem !important
+  }
+}
+
+.fs-1 {
+  font-size: calc(1.34375rem + 1.125vw) !important
+}
+
+.fs-2 {
+  font-size: calc(1.3rem + .6vw) !important
+}
+
+.fs-3 {
+  font-size: calc(1.27813rem + .3375vw) !important
+}
+
+.fs-4 {
+  font-size: calc(1.25625rem + .075vw) !important
+}
+
+.fs-5 {
+  font-size: 1.09375rem !important
+}
+
+.fs-6 {
+  font-size: .875rem !important
+}
+
+.text-pink1 {
+  color: $pink1 !important;
+}
+
+.text-pink2 {
+  color: $pink2 !important;
+}
+
+a.hero-btn1, button.hero-btn1, .hero-btn1, a.hero-btn2, button.hero-btn2, .hero-btn2, a.hero-btn-blue, button.hero-btn-blue, .hero-btn-blue {
+  font-size: 15px;
+  display: inline-block;
+  padding: 12px 24px !important;
+  min-width: 140px;
+  text-align: center;
+  @include border-radius(30px);
+  font-weight: 600;
+}
+
+a.hero-btn1, button.hero-btn1, .hero-btn1 {
+  color: $white2 !important;
+  background: $pink1 !important;
+  margin-right: 10px;
+
+  &:hover {
+    background: $pink2 !important;
+    color: $white2 !important;
+  }
+}
+
+a.hero-btn2, button.hero-btn2, .hero-btn2 {
+  color: $text2 !important;
+  background: $white2 !important;
+  &:hover {
+    background: $blue !important;
+    color: $text-white2 !important;
+  }
+}
+
+a.hero-btn-blue, button.hero-btn-blue, .hero-btn-blue {
+  color: $text-white2 !important;
+  background: $blue !important;
+  &:hover {
+    background: $pink1 !important;
+    color: $text-white2 !important;
+  }
+}
+
+.quotation {
+  font-size: 15px;
+  color: $text1;
+  background: $border1;
+  display: block;
+  padding: 20px 30px 25px;
+  margin: 20px 0;
+  border-left: 2px solid $pink1;
+  line-height: 30px;
+}
+
+
+.share-buttons {
+  i {
+    font-size: 14px;
+    color: $pink1;
+    display: block;
+    border: 1px solid $border1;
+    @include border-radius(50%);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+
+    &:hover {
+      background: $pink1;
+      border-color: $pink1;
+      color: #fff;
+    }
+  }
+}
+
+.before-after-arrows {
+  display: block;
+  //width: 75px;
+  //height: 35px;
+  border: 1px solid $border1;
+  @include border-radius(25px);
+  text-align: center;
+  padding: 4px 16px;
+
+  &:hover {
+    color: #fff;
+    border-color: $pink1;
+    background: $pink1;
+  }
+}
+
+

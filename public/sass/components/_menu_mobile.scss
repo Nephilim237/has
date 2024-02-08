@@ -1,0 +1,132 @@
+/* ====================
+##. Mobile Menu
+==================== */
+.mobile-menu-area {
+  display: none;
+}
+@media (max-width: 767px) {
+  .logo-area,
+  .logo-area2,
+  .top-bar,
+  .top-bar2,
+  .menu-area,
+  .menu-area3 {
+    display: none;
+  }
+  .home-slider,
+  .hero-area,
+  .hero-area2,
+  .hero-area3 {
+    margin-top: 70px;
+  }
+}
+.mean-container {
+  .mean-bar {
+    background: #fff;
+    float: none;
+    z-index: 999;
+    text-align: center;
+    padding: 10px 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .meanmenu-reveal {
+      color: $pink1;
+      position: absolute;
+      left: 0 !important;
+      right: inherit;
+      top: 0;
+      width: 23px;
+      margin-top: 22px;
+      margin-left: 30px;
+      span {
+        display: block;
+        background: $pink1;
+        height: 2px;
+        margin-top: 5px;
+      }
+    }
+    .mean-nav {
+      float: left;
+      width: 100%;
+      background: transparent;
+      margin-top: 0;
+      a {
+        img {
+          margin-top: 6px;
+          margin-right: -60px;
+          max-width: 150px;
+        }
+        i {
+          font-size: 15px;
+          color: $pink1;
+          float: right;
+          margin-top: 7px;
+          margin-right: 30px;
+          width: 35px;
+          height: 35px;
+          border: 1px solid $pink1;
+          padding-top: 9px;
+          @include border-radius(50%);
+          @include transition(0.2s ease);
+          &:hover {
+            color: #fff;
+            background: $pink1;
+          }
+        }
+      }
+      ul {
+        margin-top: 20px;
+        text-align: left;
+        padding: 0 30px;
+        li {
+          position: relative;
+          a {
+            color: $text1;
+            display: block;
+            padding: 6px 0;
+            border-bottom: 1px solid $border1;
+            letter-spacing: 0.5px;
+            &:hover {
+              color: $pink1;
+            }
+          }
+          &:nth-child(1) {
+            a {
+              border-top: 1px solid $border1;
+            }
+          }
+          .mean-expand {
+            font-size: 22px !important;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: -6px;
+            z-index: 2;
+            background: transparent;
+            border: none !important;
+            &:hover {
+              background: transparent;
+            }
+          }
+          ul {
+            padding-left: 20px;
+            margin-top: 10px;
+            li {
+              a {
+                font-size: 13px;
+                border: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

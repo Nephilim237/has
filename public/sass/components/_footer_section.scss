@@ -1,0 +1,193 @@
+/* ====================
+##. Footer Section
+==================== */
+footer {
+  background: $blue;
+  padding: 80px 0 75px;
+  .findus {
+    h4 {
+      color: $border2;
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+    p {
+      font-size: 15px;
+      color: $text-white2;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    ul {
+      li {
+        color: $text-white2;
+        margin-bottom: 12px;
+        i {
+          font-size: 15px;
+          color: $pink1;
+          width: 35px;
+        }
+      }
+    }
+  }
+  .qlink {
+    h4 {
+      color: $border2;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+        i {
+          font-size: 14px;
+          color: $pink1;
+          margin-right: 20px;
+        }
+        a {
+          font-size: 15px;
+          color: $text-white2;
+
+          &:hover {
+            color: $pink1;
+          }
+        }
+      }
+    }
+  }
+  .tpost {
+    h4 {
+      color: $border2;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        color: $text-white2;
+        line-height: 24px;
+        margin-bottom: 20px;
+        i {
+          font-size: 32px;
+          color: $text-white2;
+          display: inline-block;
+          margin-right: 10px;
+          float: left;
+          height: 42px;
+        }
+        a {
+          color: $pink1;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .newsletter {
+    h4 {
+      color: $border2;
+      text-transform: uppercase;
+      margin-bottom: 38px;
+    }
+    form {
+      input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid $text-white2;
+        margin-bottom: 20px;
+        background: transparent;
+        color: $border1;
+        padding-left: 15px;
+        @include border-radius(25px);
+        &:focus {
+          border-color: $pink1;
+        }
+      }
+      button {
+        font-size: 15px;
+        color: $border1;
+        background: $pink1;
+        width: 100%;
+        height: 40px;
+        font-weight: 600;
+        border: none;
+        @include border-radius(25px);
+        &:hover {
+          background: $pink2;
+        }
+      }
+    }
+  }
+  .f-menu {
+    margin-top: 60px;
+    border-top: 1px solid $text1;
+    padding-top: 65px;
+    ul.menu {
+      margin-bottom: 20px;
+      li {
+        a {
+          font-size: 15px;
+          color: $text-white2;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 0 10px;
+          &:hover {
+            color: $pink1;
+          }
+        }
+      }
+    }
+    p{
+      font-size: 15px;
+      color: $text-white2;
+      margin-bottom: 20px;
+      i {
+        color: $pink1;
+        margin: 0 2px;
+      }
+      a {
+        color: $pink1;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    ul.social {
+      li {
+        a {
+          i {
+            font-size: 13px;
+            color: $text-white2;
+            border: 1px solid $text-white2;
+            width: 28px;
+            height: 28px;
+            padding-top: 6px;
+            @include border-radius(50%);
+            &:hover {
+              background: $text-white2;
+              color: $pink1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    a {
+      background: $pink1;
+      position: fixed;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      bottom: 80px;
+      right: 40px;
+      padding-top: 11px;
+      @include border-radius(50%);
+      display: none;
+      @include transition(0.2s ease);
+      z-index: 1;
+
+      &:hover {
+        background: $pink2;
+      }
+    }
+  }
+}

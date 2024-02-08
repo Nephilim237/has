@@ -1,0 +1,24 @@
+{
+  "name": "help-after-stroke",
+  "version": "1.0.0",
+  "description": "Association à but non lucratif ",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "sass public/sass/style.scss public/css/style.css --source-map --color",
+    "sass-watch": "sass -w public/sass/style.scss public/css/style.css --source-map --color"
+  },
+  "keywords": [
+    "help",
+    "after",
+    "stroke"
+  ],
+  "author": "Coding City",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}

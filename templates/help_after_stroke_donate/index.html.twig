@@ -1,0 +1,179 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Faire un Don{% endblock %}
+
+{% block body %}
+    <div class="container-fluid my-5 bg-pink-2 text-white">
+        <div class="row flex-row-reverse align-items-center">
+            <div class="col-md-5 col-sm-12">
+                <img src="{{ asset('images/donation/donation-1.webp') | imagine_filter('long_banner') }}" alt="Illustration" class="img-fluid">
+            </div>
+            <div class="col-md-7 col-sm-12 d-none d-md-block">
+                <h1 class="text-uppercase fw-600 mb-3">Faites un don à HELP AFTER STROKE</h1>
+                <p class="fs-3">
+                    Votre don déductible d'impôt aidera la Stroke Foundation dans sa mission de guider et de soutenir les survivants d'un AVC et leurs soignants, où
+                    qu'ils soient et qui qu'ils soient, tout au long de leur rétablissement.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pb-120 pt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12">
+                    <p class="text-justify pb-5 fs-4 lh-lg">
+                        Les fonds donnés ou récoltés peuvent servir à :
+
+                        Fournir des fonds aux survivants d’un AVC pour couvrir une partie des coûts de rétablissement, par le biais d’une thérapie physique,
+                        professionnelle ou orthophonique.
+                        Développer des ressources éducatives multimédias pour sensibiliser au risque, aux symptômes et à la prévention des accidents vasculaires
+                        cérébraux.
+                        Menez des campagnes publicitaires avec des messages importants sur la prévention et les symptômes de l’AVC, afin de sensibiliser
+                        davantage à
+                        l’AVC.
+                        Maintenir les coûts opérationnels de l’hébergement du site Web et des certificats de sécurité.
+
+                        Vos données sont protégées et aucune information concernant vos données ou votre don ne sera partagée avec un tiers.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-uppercase fw-500 mb-3">Nos récents donateurs</h4>
+                        </div>
+                        <div class="col-12">
+                            <div class="donor-box">
+                                <p class="donate-date mb-2">16/12/2023</p>
+                                <h3 class="donor-name">John Doe</h3>
+                                <p>Une pensee tres profonde a toutes les victimes de ce fléau. Je garde encore de douloureux souvenirs suite à la perte de
+                                    grand-mère il y a 8 ans déjà. Vivement que la technologie évolue</p>
+                            </div>
+                            <div class="donor-box">
+                                <p class="donate-date mb-2">16/12/2023</p>
+                                <h3 class="donor-name">John Doe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{#                <div class="col-md-3 col-sm-12">#}
+{#                    <div class="donate">#}
+{#                        <div class="donate-black">#}
+{#                            <h2><span>$</span> Faire un Don</h2>#}
+{#                            <p>#}
+{#                                Votre contribution est essentielle au succès de notre initiative.#}
+{#                                Choisissez le montant que vous souhaitez donner.#}
+{#                            </p>#}
+{#                        </div>#}
+{#                        <div class="donate-blue">#}
+{#                            <h3>Choisir un montant*</h3>#}
+{#                            <div class="donate-amount-box">#}
+{#                                <div class="donate-amount">#}
+{#                                    <div class="denomination selected">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount5" value="5" checked="">#}
+{#                                        <label for="amount5000">XAF5.000</label>#}
+{#                                    </div>#}
+{#                                    <div class="denomination">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount10" value="10">#}
+{#                                        <label for="amount25000">XAF25.000</label>#}
+{#                                    </div>#}
+{#                                    <div class="denomination">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount15" value="15">#}
+{#                                        <label for="amount50000">XAF50.000</label>#}
+{#                                    </div>#}
+{#                                    <div class="denomination">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount25" value="25">#}
+{#                                        <label for="amount100000">XAF100.000</label>#}
+{#                                    </div>#}
+{#                                    <div class="denomination">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount50" value="50">#}
+{#                                        <label for="amount500000">XAF500.000</label>#}
+{#                                    </div>#}
+{#                                    <div class="denomination">#}
+{#                                        <input autocomplete="off" type="radio" name="amount" id="amount100" value="100">#}
+{#                                        <label for="amount1000000">XAF1.000.000</label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                {{ form_start(form, {'method': 'POST'}) }}#}
+{#                                <div class="denomination-other mb-3">#}
+{#                                    {{ form_widget(form.customerPhoneNumber) }}#}
+{#                                </div>#}
+
+{#                                <div class="denomination-other mb-3">#}
+{#                                    {{ form_widget(form.amount) }}#}
+{#                                </div>#}
+
+{#                                <div class="denomination-other mb-3 d-flex justify-content-between align-items-baseline">#}
+{#                                    {{ form_widget(form.dedicated, {'attr': {'class': 'mr-2'}}) }}#}
+{#                                    {{ form_label(form.dedicated, "Dédier mon don en l'honneur ou à la mémoire de quelqu'un") }}#}
+{#                                </div>#}
+
+{#                                <div class="denomination-other mb-3">#}
+{#                                    {{ form_widget(form.name) }}#}
+{#                                </div>#}
+
+{#                                <div class="denomination-other mb-3">#}
+{#                                    {{ form_widget(form.payItemDesc) }}#}
+{#                                </div>#}
+{#                                {{ form_end(form) }}#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="donate-blue donate-payment">#}
+{#                            <h3>Méthode de paiement</h3>#}
+{#                            <div class="d-flex justify-content-between">#}
+{#                                <label class="w-50">#}
+{#                                    <input type="radio" name="payment" value="paypal" checked="checked" autocomplete="off">#}
+{#                                    <img src="{{ asset('images/paiement-method/paypall.png') | imagine_filter('paiement_method_thumbnail') }}"#}
+{#                                         class="img-fluid"#}
+{#                                         alt="PayPal">#}
+{#                                </label>#}
+{#                                <label class="w-50">#}
+{#                                    <input type="radio" name="payment" value="credit-card" autocomplete="off">#}
+{#                                    <img src="{{ asset('images/paiement-method/visa.png') | imagine_filter('paiement_method_thumbnail') }}" class="img-fluid"#}
+{#                                         alt="Carte#}
+{#                                     de#}
+{#                                    Credit">#}
+{#                                </label>#}
+{#                                <label class="w-50">#}
+{#                                    <input type="radio" name="payment" value="orange-money" autocomplete="off">#}
+{#                                    <img src="{{ asset('images/paiement-method/orange-money.webp') | imagine_filter('paiement_method_thumbnail') }}"#}
+{#                                         class="img-fluid"#}
+{#                                         alt="Orange#}
+{#                                    Money">#}
+{#                                </label>#}
+{#                                <label class="w-50">#}
+{#                                    <input type="radio" name="payment" value="momo" autocomplete="off">#}
+{#                                    <img src="{{ asset('images/paiement-method/mtn-1.jpg') | imagine_filter('paiement_method_thumbnail') }}" class="img-fluid"#}
+{#                                         alt="MTN#}
+{#                                    Mobile#}
+{#                                    Money">#}
+{#                                </label>#}
+{#                            </div>#}
+{#                            <div class="donate-submit">#}
+{#                                <button type="submit">Faire Un Don </button>#}
+{#                                <p><small>Veuillez noter que les cotisations ne sont pas déductibles d'impôt.</small></p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {#    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> #}
+    <script>
+        window.addEventListener('load', function () {
+            $(".denomination-other input.donate-amount").on('keypress', function (event) {
+                // allow only int values
+                // TODO: remove leading 0
+                let regex = new RegExp("^[0-9]+$");
+                let key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+                if (!regex.test(key)) {
+                    event.preventDefault();
+                    return false;
+                }
+                $("button").text('Faire Un Don XAF' + $(this).val() + key);
+            });
+        })
+    </script>
+{% endblock %}

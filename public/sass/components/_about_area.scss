@@ -1,0 +1,238 @@
+/* ====================
+##. Home About Area
+==================== */
+.h-about {
+  //background-image: url("../images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    background: rgba($blue, 0.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .about-box {
+    padding: 80px 0;
+    h4 {
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $border1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $border1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+        margin-left: 38px;
+      }
+    }
+    img {
+      margin-left: 19px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: $border1;
+      line-height: 32px;
+      margin-bottom: 30px;
+      span {
+        display: block;
+        color: $border2;
+        margin-top: 10px;
+      }
+    }
+    ul {
+      margin-bottom: 12px;
+      li {
+        font-size: 15px;
+        color: $border1;
+        &:nth-child(1) {
+          width: 35%;
+        }
+        i {
+          font-size: 14px;
+          color: $border2;
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .shedule-box {
+    background: #f3f3f3;
+    padding: 78px 45px 38px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+    @include border-radius(0 0 2px 2px);
+    .open-hr {
+      margin-bottom: 28px;
+      h6 {
+        font-size: 17px;
+        color: $black1;
+        font-weight: 600;
+        margin-bottom: 18px;
+        i {
+          color: $pink1;
+          margin-right: 8px;
+        }
+      }
+      ul {
+        li {
+          font-size: 15px;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          border-bottom: 1px dashed $border2;
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+    .help-box {
+      h6 {
+        font-size: 17px;
+        color: $black1;
+        font-weight: 600;
+        margin-bottom: 13px;
+        i {
+          color: $pink1;
+          margin-right: 8px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+      }
+      a {
+        font-size: 15px;
+        color: #fff;
+        background: $pink1;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        @include border-radius(25px);
+        &:hover {
+          background: $pink2;
+        }
+      }
+    }
+  }
+}
+
+/* ====================
+##. About Area
+==================== */
+.about-area {
+  padding: 85px 0;
+  .about-box {
+    h4 {
+      color: $black1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background: $pink1;
+        width: 30px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -23px;
+        margin-left: 38px;
+      }
+    }
+    img {
+      margin-bottom: 10px;
+      margin-left: 19px;
+    }
+    p {
+      font-size: 16px;
+      color: $text2;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+    ul {
+      margin-bottom: 40px;
+      li {
+        font-size: 15px;
+        color: $text3;
+        margin-bottom: 20px;
+        line-height: 25px;
+        i {
+          float: left;
+          color: $pink1;
+          border: 1px solid $border2;
+          width: 35px;
+          height: 35px;
+          @include border-radius(50%);
+          text-align: center;
+          padding-top: 9px;
+          margin-top: 8px;
+          margin-right: 15px;
+        }
+      }
+    }
+    a.rdm-btn {
+      font-size: 15px;
+      color: $pink1;
+      border: 1px solid $pink1;
+      display: inline-block;
+      padding: 8px 32px;
+      @include border-radius(30px);
+      font-weight: 600;
+      &:hover {
+        background: $pink1;
+        color: #fff;
+      }
+    }
+  }
+  .about-image {
+    position: relative;
+    img {
+      max-width: 58%;
+      @include border-radius(6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    img.img1 {
+
+    }
+    img.img2 {
+      position: absolute;
+      bottom: -49px;
+      right: 0;
+    }
+  }
+}

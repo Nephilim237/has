@@ -1,0 +1,75 @@
+<!-- Menu Area -->
+<section class="menu-area3" id="btt">
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <a href=""><img src="{{ asset('logo/landscape-logo.jpeg') }}" alt="Help After Stroke" width="128"></a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="main-menu text-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item active"><a href="{{ path("app_home") }}">Accueil</a>
+                        </li>
+                        <li class="list-inline-item"><a href="{{ path("life_after_stroke_blog") }}">La Vie Après Un AVC</a>
+                        </li>
+                        <li class="list-inline-item"><a href="{{ path('team') }}">Notre Equipe</a>
+                        </li>
+                        <li class="list-inline-item"><a href="{{ path('about') }}">A Propos De Nous</a>
+                        </li>
+{#                        <li class="list-inline-item"><a href="{{ path('help_after_stroke_donate') }}" class="hero-btn1">Faire un don maintenant</a>#}
+{#                        </li>#}
+                        <li class="list-inline-item searchbar">
+{#                            <a href="#" class="nav-search search-trigger">#}
+{#                                <img src="{{ asset('images/search.png') }}" alt="">#}
+{#                            </a>#}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Fullscreen search -->
+        <div class="search-wrap">
+            <div class="search-inner">
+                <div class="search-cell">
+                    <form method="get">
+                        <div class="search-field-holder">
+                            <input type="search" class="form-control main-search-input" placeholder="Type & hit enter...">
+                            <img src="{{ asset('images/close-btn.png') }}" alt="" id="search-close">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="cart-overlay"></div>
+    </div>
+</section>
+<!-- End Menu Area -->
+
+<!-- Mobile Menu -->
+<section class="mobile-menu-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-menu">
+                    <nav id="dropdown">
+                        <a href=""><img src="{{ asset('logo/landscape-logo.jpeg') }}" alt="Help After Stroke" width="100"></a>
+                        <a href=""><i class="fa fa-bell-o"></i></a>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ path('app_home') }}">Accueil</a>
+                            </li>
+                            <li><a href="{{ path("life_after_stroke_blog") }}">La Vie Après Un AVC</a></li>
+                            <li><a href="{{ path('team') }}">Notre Equipe</a></li>
+                            <li><a href="{{ path('about') }}">A Propos De Nous</a></li>
+{#                            <li><a href="">Blog</a></li>#}
+{#                            <li><a href="">Contact</a></li>#}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Mobile Menu -->

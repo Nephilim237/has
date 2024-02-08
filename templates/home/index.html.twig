@@ -1,0 +1,330 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <!-- Hero Area -->
+    <section class="hero-area3">
+        <div class="hero-table">
+            <div class="hero-tablecell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12">
+                            <div class="hero-heading-top wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                                <p><span></span> De l'aide à domicile pour vos proches</p>
+                            </div>
+                            <div class="hero-heading wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                                <h2 class="text-pink1">HELP AFTER STROKE</h2>
+                            </div>
+                            <div class="hero-para wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                            </div>
+                            <div class="hero-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                                <a class="hero-btn1" href="">Trouver de l'aide</a>
+{#                                <a class="hero-btn2" href="">Faire un don dès maintenant</a>#}
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-0 offset-lg-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Department Area 4 -->
+    <section class="department-area4 py-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="department4-top text-center">
+                        <h4 class="text-uppercase">Vous devez vous ressaisir...</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p class="pb-3">Nous proposons des conseils, des astuces, des formations d'assistants de vie sociale, des exercices pratiques pour
+                            votre rééducation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="department-box text-center py-3">
+                        <div class="box-icon">
+                            <img src="{{ asset('images/dep-1.png') }}" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Formation</h5>
+                            <p class="pb-3">Nous formons des assistants de vie sociale.</p>
+                            <a href="#">Devenir un Assistant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="department-box text-center py-3">
+                        <div class="box-icon">
+                            <img src="{{ asset('images/dep-3.png') }}" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Conseils & Astuces</h5>
+                            <p class="pb-3">Pour votre plus grand bien, nous vous donnons des conseils qui vous aideront à repartir d'un bon pied.</p>
+                            <a href="#">Consulter notre Blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="department-box text-center py-3">
+                        <div class="box-icon">
+                            <img src="{{ asset('images/dep-2.png') }}" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h5>Prenez soin de votre coeur</h5>
+                            <p class="pb-3">Ne vous laissez pas abattre, aussi infime qu'il puisse être possible, faites des exercices, Ils vous feront du
+                                bien en retour.</p>
+                            <a href="#">Voir les exercices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Department Area 4 -->
+
+    <!-- Banner Area -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-box d-flex justify-content-between">
+                        <div>
+                            <h1 class="text-pink1">HELP AFTER STROKE</h1>
+                            <p>De l'aide à domicile pour nos proches.</p>
+                        </div>
+                        <div><a href="#" class="hero-btn1">Get Started</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!-- Gallery Area -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-top text-center">
+                        <h4 class="section-title">Nos Activités</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius inventore magni quod voluptate, molestiae eos
+                            odio illo.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="gallery-filter list-unstyled list-inline text-center">
+                        <li class="list-inline-item active" data-filter="*">All</li>
+                        <li class="list-inline-item" data-filter=".training">Formation</li>
+                        <li class="list-inline-item" data-filter=".meeting">Reunion</li>
+                        <li class="list-inline-item" data-filter=".dating">Rencontre</li>
+                        <li class="list-inline-item" data-filter=".assistance">Assistance</li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="gallery-items row">
+                        <div class="col-lg-3 col-md-4 grid-item training">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-9.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-9.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item meeting">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-1.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item training">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-2.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-2.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item meeting">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-8.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-8.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item dating">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-4.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-4.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item assistance">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-5.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-5.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item dating">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-6.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-6.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 grid-item assistance">
+                            <div class="gallery-content">
+                                <img src="{{ asset('images/gallery/gallery-7.jpg') }}" alt="" class="img-fluid">
+                                <div class="fc-icon text-center">
+                                    <a href="{{ asset('images/gallery/gallery-full-7.jpg') }}">
+                                        <img src="{{ asset('images/focus.png') }}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Area -->
+
+    <!-- Testimonial Area -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-top text-center">
+                        <h4>Our Patient Say About Us</h4>
+                        <img src="images/heartbeat2.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eius inventore magni quod voluptate, molestiae eos
+                            odio illo.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-testimonial owl-carousel">
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-1.jpg" alt="" class="img-fluid">
+                            <h5>Amily Brown</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-2.jpg" alt="" class="img-fluid">
+                            <h5>George Dabis</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-1.jpg" alt="" class="img-fluid">
+                            <h5>Amily Brown</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-2.jpg" alt="" class="img-fluid">
+                            <h5>George Dabis</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-1.jpg" alt="" class="img-fluid">
+                            <h5>Amily Brown</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <img src="images/patient-2.jpg" alt="" class="img-fluid">
+                            <h5>George Dabis</h5>
+                            <span>Patient</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores. Placeat repellat, et totam
+                                optio. Sequi qui laborum ratione cumque tempora totam voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Area -->
+
+    <!-- News & Events -->
+    <section class="news py-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="news-top text-center mb-5">
+                        <h4>Récents</h4>
+                        <img src="images/heartbeat.png" alt="">
+                        <p>Consultez notre actualité récente</p>
+                    </div>
+                </div>
+                {% for post in latestPosts %}
+                    <div class="col-md-4">
+                        <div class="news-box">
+                            <div class="news-image">
+                                <a href="{{ path('single_post', {'slug' : post.slug}) }}">
+                                    <img src="{{ vich_uploader_asset(post, 'imageFile') | imagine_filter('recent_post_image') }}" alt="{{ post.title }}"
+                                         class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="news-heading d-flex">
+                                <div class="heading-box">
+                                    <h6 class="my-3 text-uppercase lh-base"><a href="{{ path('single_post', {'slug' : post.slug}) }}">{{ post.title }}</a></h6>
+                                    <ul class="list-unstyled list-inline my-3">
+                                        <li class="list-inline-item">
+                                            <i class="fa fa-commenting-o"></i>
+                                            <a href="{{ path('single_post', {'slug' : post.slug}) }}"> <span>23</span> Commentaires</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <p class="mb-3">
+                                    {{ post.content | striptags | u.truncate(200, '...', false) | raw }}
+                                </p>
+                                <p>
+                                    <a href="{{ path('single_post', {'slug' : post.slug}) }}" class="btn-link text-pink1">
+                                        Lire l'article <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End News & Events -->
+{% endblock %}

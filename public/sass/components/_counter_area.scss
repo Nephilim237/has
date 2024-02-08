@@ -1,0 +1,64 @@
+/* ====================
+##. Counter Area
+==================== */
+.counter-area {
+  background-image: url("../images/banner/counter-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0 90px;
+  &:before {
+    position: absolute;
+    content: '';
+    background: transparentize($blue, .35);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .counter-box {
+    border: 1px solid $border2;
+    border-top: none;
+    margin: 0 20px;
+    padding: 25px 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background: $border2;
+      width: 60px;
+      height: 1px;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background: $border2;
+      width: 60px;
+      height: 1px;
+      top: 0;
+      right: 0;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+      margin-top: -15px;
+    }
+    p {
+      font-size: 46px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    h6 {
+      font-size: 15px;
+      color: $border1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+  }
+}

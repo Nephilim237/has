@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Notre Equipe{% endblock %}
+
+{% block body %}
+    <!-- Breadcrumb Area -->
+    <section class="breadcrumb-area has-team text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>La Team</h2>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="{{ path('app_home') }}">Accueil</a></li>
+                        <li class="list-inline-item"><i class="fa fa-long-arrow-right"></i>La Team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumb Area -->
+
+    <!-- Doctor List -->
+    <section class="doctor-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-list-top text-center">
+                        <h4>Quelques uns de Nos Membres</h4>
+                        <img src="{{ asset('images/heartbeat.png') }}" alt="">
+                        <p>Une liste sommaire et non exhaustive de notre équipe. Familiarisez-vous avec tous les membres de notre équipe en cliquant sur
+                            chaque profil</p>
+                    </div>
+                </div>
+                {% for memberTeam in team %}
+                    <div class="col-lg-3 col-md-4">
+                        <div class="doctor-box2 text-center">
+                            <img src="{{ vich_uploader_asset(memberTeam, 'imageFile') | imagine_filter('profile_image_on_team_view') }}" alt="Photo de {{ memberTeam
+                            .firstname }}"
+                                 class="img-fluid">
+                            <h5><a href="{{ path('user_profile', {'slug': memberTeam.slug}) }}" >{{ memberTeam.firstname | first ~ '.' }} {{ memberTeam.name
+                                    }}</a></h5>
+                            <p>{{ memberTeam.memberFunction | striptags | u.truncate(32, '...', false) | raw }}</p>
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Doctor List -->
+
+    <!-- Counter Area -->
+    <section class="counter-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="images/counter-1.png" alt="" class="img-fluid">
+                        <p class="counter">3729</p>
+                        <h6>Happy Patients</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="images/counter-2.png" alt="" class="img-fluid">
+                        <p class="counter">139</p>
+                        <h6>Specialists</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="images/counter-3.png" alt="" class="img-fluid">
+                        <p class="counter">124</p>
+                        <h6>Ward Rooms</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <img src="images/counter-4.png" alt="" class="img-fluid">
+                        <p class="counter">337</p>
+                        <h6>Cabins</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Counter Area -->
+{% endblock %}

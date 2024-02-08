@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Breadcrumb Area -->
+    <section class="breadcrumb-area single-blog text-center" style="background-image: url('{{ vich_uploader_asset(post, 'imageFile') | imagine_filter
+        ('single_post_image') }}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>{{ post.title }}</h2>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="{{ path('app_home') }}">Accueil</a></li>
+                        <li class="list-inline-item"><i class="fa fa-long-arrow-right"></i>{{ post.title }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumb Area -->
+    <!-- Blog Area -->
+    <section class="blog-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8">
+                    <div class="blog-d-box">
+                        <div class="image-box">
+                            <img src="{{ vich_uploader_asset(post, 'imageFile') | imagine_filter('single_post_image') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="image-content">
+                            <h4>{{ post.title }}</h4>
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><i class="fa fa-calendar"></i>{{ post.createdAt | format_datetime('short', 'short', locale='fr', timezone='Africa/Douala') }}</li>
+                                <li class="list-inline-item"><i class="fa fa-user-o"></i><a href="#">Dr. Ihiof</a></li>
+                            </ul>
+                            <p>{{ post.content | raw }}</p>
+                        </div>
+                        <div class="blog-btns d-flex justify-content-between">
+                            <div class="post-bfaf">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a class="before-after-arrows" href="#"><i class="fa fa-long-arrow-left"></i>Précédant</a></li>
+                                    <li class="list-inline-item"><a class="before-after-arrows" href="#">Suivant<i class="fa fa-long-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="widget-search">
+                                <h5>SEARCH BLOG</h5>
+                                <form action="#">
+                                    <input type="text" name="search" placeholder="Search Here" required="">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="widget-post">
+                                <h5>RECENT POST</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-angle-right"></i><a href="">Development in easy Way to start your career.</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="">How to start web design for easyest way.</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="">Start your career in web design in easy way.</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="">What worlds top developer sayed about there career.</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="">Consectetur adipisicing elit.</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="">Duis aute irure dolor in reprehen.</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget-cat">
+                                <h5>CATEGORIES</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Design <span>36</span></a></li>
+                                    <li><a href="">Photography <span>43</span></a></li>
+                                    <li><a href="">Branding <span>23</span></a></li>
+                                    <li><a href="">Corporate <span>34</span></a></li>
+                                    <li><a href="">Graphic <span>27</span></a></li>
+                                    <li><a href="">Journal <span>19</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="widget-tag">
+                                <h5>POPULAR TAG</h5>
+                                <div class="tag-box">
+                                    <a href="">HTML</a>
+                                    <a href="">CSS</a>
+                                    <a href="">Photoshop</a>
+                                    <a href="">Jquery</a>
+                                    <a href="">PHP</a>
+                                    <a href="">Wordpress</a>
+                                    <a href="">Bootstrap</a>
+                                    <a href="">Javascript</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Area -->
+
+{% endblock %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
